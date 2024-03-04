@@ -2,8 +2,6 @@
     margin: 0;
     padding: 0;
     font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
 }
 
 a {
@@ -24,14 +22,17 @@ ul li {
     z-index: 1;
 }
 
+.site-header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .site-header__logo {
     padding: 10px 0;
 }
 
 .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -82,6 +83,30 @@ ul li {
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+
+.hero--chicken-tikka-masala {
+    background-image: url(images/recipes/chicken-tikka-masala.jpeg);
+}
+
+.hero--dr-seuss-green-eggs-and-ham {
+    background-image: url(images/recipes/dr-seuss-green-eggs-and-ham.jpeg);
+}
+
+.hero--ratatouille {
+    background-image: url(images/recipes/ratatouille.jpeg);
+}
+
+.hero-inner {
+    width: 50%;
+    background: rgba(0, 0, 0, .5);
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+.hero-inner__title {
+    font-size: 48px;
 }
 
 .content {
@@ -227,4 +252,30 @@ ul li {
     width: 100%;
     text-align: center;
     padding: 20px 0;
+}
+
+.recipe-content {
+    margin-top: 60px;
+}
+
+.recipe-content li {
+    font-family: "Merriweather", serif;
+    font-size: 18px;
+}
+
+.recipe-content ol {
+    margin-left: 20px;
+}
+
+.recipe-content__list {
+    margin-bottom: 20px;
+}
+
+.recipe-content__image {
+    display: flex;
+    justify-content: center;
+}
+
+.recipe-content__image img {
+    width: 20%;
 }
